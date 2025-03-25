@@ -733,7 +733,7 @@ class Login
 			}
 			else
 			{
-				System.out.println(RED_BOLD+"\t\t\t\tMaximum Number of Attamps Completed.....Try Agian 30 Minuts...."+RESET);
+				System.out.println(RED_BOLD+"\t\t\t\tMaximum Number of Attempts Completed.....Try Agian 30 Minuts...."+RESET);
 				System.exit(0);
 			}
 		}
@@ -809,7 +809,7 @@ class Login
 		System.out.println("| 7 -> \033[1;36mCustomer Support"+RESET+"\t\t\t|");
 	    System.out.println("| 8 -> \033[1;36mChange Password"+RESET+"\t\t\t|");
 		System.out.println("| 9 -> \033[1;36mFacilities and Service"+RESET+"\t\t|");
-		System.out.println("| 10 -> \033[1;36mGo to Wallent  "+RESET+"\t\t\t|");
+		System.out.println("| 10 -> \033[1;36mGo to Wallet  "+RESET+"\t\t\t|");
 		System.out.println("| 11 -> \033[1;36mAbout         "+RESET+"\t\t\t|");
 		System.out.println("| 12 -> "+RED+"Exit"+RESET+"\t\t\t\t|");
 		System.out.println("| 13 ->"+RED+" Sign Out"+RESET+"\t\t\t|");
