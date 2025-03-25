@@ -202,7 +202,7 @@ class Login
 				reg_count = 3;
 				String str = generateOTP();
 				int a = Integer.parseInt(str);
-				System.out.println("\t\t\t\t4 Digite OTP is Successfully Genarated");
+				System.out.println("\t\t\t\t4 Digite OTP is Successfully Generated");
 				System.out.println("\t\t\t\tGenerated OTP: "+a);
 				System.out.print("\t\t\t\t\u001B[33mEnter a OTP:"+RESET);
 				int otp = scr.nextInt(); 
@@ -213,7 +213,7 @@ class Login
 				else
 				{
 					System.out.println(RED_BOLD+"\t\t\t\tSorry!Your Enter a Wrong OTP:"+RESET);
-					System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+motp+" Onely"+RESET);
+					System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+motp+" Only"+RESET);
 					if(motp>=1)
 					{
 						motp-=1;
@@ -229,7 +229,7 @@ class Login
 			else
 			{
 				System.out.println(RED_BOLD+"\t\t\t\tMobile Number Not Register This Account"+RESET);
-				System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+reg_count+" Onely"+RESET);
+				System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+reg_count+" Only"+RESET);
 				if(reg_count>=1)
 				{
 					reg_count-=1;
@@ -246,7 +246,7 @@ class Login
 		else
 		{
 			System.out.println("\t\t\t\t\u001B[33mEnter a Valid Mobile Number:"+RESET);
-			System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+mob_count+" Onely"+RESET);
+			System.out.println(YELLOW_BOLD+blink+"\t\t\t\tMaximum Number of Attempts "+mob_count+" Only"+RESET);
 			if(mob_count>=1)
 			{
 				mob_count-=1;
@@ -402,7 +402,7 @@ class Login
 								{
 									String str = generateOTP();
 									int a = Integer.parseInt(str);
-									System.out.println("\t\t\t\t4 Digits OTP is Successfully Genarated");
+									System.out.println("\t\t\t\t4 Digits OTP is Successfully Generated");
 									System.out.println("\t\t\t\tGenerated OTP: "+a);
 									System.out.print("\u001B[33m\t\t\t\tEnter a OTP:"+RESET);
 									int otp = scr.nextInt(); 
@@ -638,14 +638,14 @@ class Login
 	{
 			String str = generateOTP();
 			int a = Integer.parseInt(str);
-			System.out.println(GREEN+"\t\t\t\t4Digits OTP is Successfully Genarated"+RESET);
+			System.out.println(GREEN+"\t\t\t\t4Digits OTP is Successfully Generated"+RESET);
 			System.out.println("\t\t\t\tGenerated OTP: "+a);
 			System.out.print("\t\t\t\t\u001B[35mEnter a OTP:\u001B[0m");
 			int otp = scr.nextInt(); 
 			if(otp==a)
 			{
 				System.out.print("\t\t\t\t\u001b[32;1mOTP Successful Enter\n\u001b[00;1m");
-				System.out.print("\t\t\t\t\u001b[32;1mSuccessfuly Completed Rigester\n\u001b[00;1m");
+				System.out.print("\t\t\t\t\u001b[32;1mSuccessfuly Completed Register\n\u001b[00;1m");
 				rest();
 			}
 			else
@@ -1025,7 +1025,7 @@ class Login
 		if(wlAmt>=amt)
 		{
 			wlAmt-=amt;
-			System.out.println(GREEN+"Sucesfully Withdraw Your Amount:"+amt+RESET);
+			System.out.println(GREEN+"Succesfully Withdraw Your Amount:"+amt+RESET);
 			 wA();
 		}
 		else
@@ -1038,7 +1038,7 @@ class Login
 	void About()
 	{
 		System.out.println(CYAN+"\n                         *******************About MyBooking.com***************\n"+RESET);
-		System.out.print(GREEN+"Part of Booking Holdings Inc.MyBooking.com s mission is to make it easier for everyone to experience the world.\n"+RESET);
+		System.out.print(GREEN+"Part of Booking Holdings Inc.MyBooking.com  mission is to make it easier for everyone to experience the world.\n"+RESET);
 		System.out.println(GREEN+"For all questions about MyBooking.com, the Service (i.e. the online accommodation reservation service) and the Website or if you wish to\n"
 		                   +"send or serve any documents, correspondence, notices or other communications in respect of MyBooking.com,\n" 
 						   +"the Service, the Website, or for press enquiries, please contact Mybooking.com directly.\n"+RESET);
@@ -2170,9 +2170,9 @@ class Hotel1
 			System.out.println("\033[1;31mYour Enter a Wrong OTP:"+RESET);
 			while(true)
 			{
-				System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attamps: "+countadhar+" Only"+RESET);
+				System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attempts: "+countadhar+" Only"+RESET);
 				otpA = generateOTP();
-				System.out.println(GREEN+"6 Digite OTP is Successfully Genarated"+RESET);
+				System.out.println(GREEN+"6 Digite OTP is Successfully Generated"+RESET);
 				System.out.println("Generated OTP: "+otpA);
 				System.out.print(YELLOW+"Agian Enter a OTP:"+RESET);
 				userotp = sc.next();
@@ -2188,7 +2188,7 @@ class Hotel1
 						countadhar-=1;
 					else
 					{
-						System.out.println("Exiting...(Maximum Number of Attamps Completed)");
+						System.out.println("Exiting...(Maximum Number of Attempts Completed)");
 						System.exit(0);
 						break;
 					}
@@ -2221,7 +2221,7 @@ class Hotel1
 			if(countadhar1>=1)
 			{
 					System.out.println(RED+"Invalid Adhaar Details:"+RESET);
-					System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attamps: "+countadhar1+" Only"+RESET);
+					System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attempts: "+countadhar1+" Only"+RESET);
 					countadhar1-=1;
 					adhardetails();
 		    }
@@ -2630,7 +2630,7 @@ class Cart extends Hotel1
 	{
 		    //String f3 = String.format("%.2f", );
 			System.out.println("---------------------------------------"+CYAN+"Booking Details"+RESET+"-------------------------------");
-			System.out.println("   BooKIng ID  :"+Hotel1.obj3.getrandomNumber());
+			System.out.println("   Booking ID  :"+Hotel1.obj3.getrandomNumber());
 			System.out.println("   Full Name   :"+Hotel1.obj3.getName()+"\t\t\tGender : "+Hotel1.obj3.getgender());
 			System.out.println("   Room Number :"+Hotel1.obj3.getroomnum()+"\t\t\tMobile Number: "+Hotel1.obj3.getmobnum());
 			System.out.println("   Check In Date: "+Hotel1.obj3.getcheckIn()+"\t\tCheck Out Date : "+Hotel1.obj3.getcheckOut());
@@ -2647,7 +2647,7 @@ class Cart extends Hotel1
 	void cart4(int n)
 	{
 			System.out.println("---------------------------------------"+CYAN+"Booking Details"+RESET+"------------------------------");
-			System.out.println("   BooKIng ID  :"+Hotel1.obj4.getrandomNumber());
+			System.out.println("   Booking ID  :"+Hotel1.obj4.getrandomNumber());
 			System.out.println("   Full Name   :"+Hotel1.obj4.getName()+"\t\t\tGender : "+Hotel1.obj4.getgender());
 			System.out.println("   Room Number :"+Hotel1.obj4.getroomnum()+"\t\t\tMobile Number: "+Hotel1.obj4.getmobnum());
 			System.out.println("   Check In Date: "+Hotel1.obj4.getcheckIn()+"\t\tCheck Out Date : "+Hotel1.obj4.getcheckOut());
@@ -2664,7 +2664,7 @@ class Cart extends Hotel1
 	void cart5(int n)
 	{
 			System.out.println("--------------------------------------"+CYAN+"Booking Details"+RESET+"---------------------------------");
-			System.out.println("   BooKIng ID  :"+Hotel1.obj5.getrandomNumber());
+			System.out.println("   Booking ID  :"+Hotel1.obj5.getrandomNumber());
 			System.out.println("   Full Name   :"+Hotel1.obj5.getName()+"\t\t\tGender : "+Hotel1.obj5.getgender());
 			System.out.println("   Room Number :"+Hotel1.obj5.getroomnum()+"\t\t\tMobile Number: "+Hotel1.obj5.getmobnum());
 			System.out.println("   Check In Date: "+Hotel1.obj5.getcheckIn()+"\t\tCheck Out Date : "+Hotel1.obj5.getcheckOut());
@@ -2682,7 +2682,7 @@ class Cart extends Hotel1
 	{
 		    //String f6 = String.format("%.2f", );
 			System.out.println("------------------------------------"+CYAN+"Booking Details"+RESET+"----------------------------------");
-			System.out.println("   BooKIng ID  :"+Hotel1.obj6.getrandomNumber());
+			System.out.println("   Booking ID  :"+Hotel1.obj6.getrandomNumber());
 			System.out.println("   Full Name   :"+Hotel1.obj6.getName()+"\t\t\tGender : "+Hotel1.obj6.getgender());
 			System.out.println("   Room Number :"+Hotel1.obj6.getroomnum()+"\t\t\tMobile Number: "+Hotel1.obj6.getmobnum());
 			System.out.println("   Check In Date: "+Hotel1.obj6.getcheckIn()+"\t\tCheck Out Date : "+Hotel1.obj6.getcheckOut());
@@ -2917,8 +2917,8 @@ class Payments
 			 {
 				 while(true)
 				 {
-					System.out.println(RED+"Your Enter a Worng otp! TryAgian"+RESET);
-					System.out.println(GREEN+"4 Digite OTP is Successfully Genarated"+RESET);
+					System.out.println(RED+"Your Enter a Wrong otp! TryAgian"+RESET);
+					System.out.println(GREEN+"4 Digite OTP is Successfully Generated"+RESET);
 					String otpr = agianotp();
 					System.out.println("Generated OTP: "+otpr);
 					System.out.print("\u001B[33mEnter a OTP:"+RESET);
@@ -2934,7 +2934,7 @@ class Payments
 					}
 					else
 					{
-						System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attamps: "+countsbi+" Only"+RESET);
+						System.out.println(YELLOW_BOLD+blink+"Maximum Number of Attempts: "+countsbi+" Only"+RESET);
 						if(countsbi>=1)
 						{
 							countsbi-=1;
@@ -2985,7 +2985,7 @@ class Payments
 			 {
 				 while(true)
 				 {
-					System.out.println(RED+"Your Enter a Wrong otp! TryAgaIn"+RESET);
+					System.out.println(RED+"Your Enter a Wrong otp! TryAgain"+RESET);
 					System.out.println(GREEN+"4 Digits OTP is Successfully Generated"+RESET);
 					String otpr = agianotp();
 					System.out.println("Generated OTP: "+otpr);
